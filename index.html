@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UX Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#" class="nav-logo" onclick="showPage('home'); return false;">Portfolio</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showPage('home'); return false;">Home</a></li>
+    <li><a href="#" onclick="showPage('projects'); return false;">Projects</a></li>
+    <li><a href="#" onclick="showPage('about'); return false;">About</a></li>
+    <li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════════════════════════ HOME PAGE ════════════════════════════════ -->
+<div class="page active" id="home">
+  <div class="container">
+    <div class="hero">
+      <div class="hero-eyebrow">UX Designer</div>
+      <h1 class="hero-name">Hello, I'm<br><em>Shreeya Galagali</em></h1>
+      <p class="hero-caption">UX Designer designing structured and meaningful user experiences</p>
+      <p class="hero-intro">I believe good design is invisible — it guides, it simplifies, and it feels right. My work focuses on clarity, structure, and meaningful user journeys.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary" onclick="showPage('projects'); return false;">View Projects</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Where I've Worked</h2>
+      <p class="section-sub">Digital banking and student-focused product experiences.</p>
+
+      <div class="company">
+        <div class="company-head">
+          <div class="company-mark">V</div>
+          <div>
+            <h3 class="company-name">Vibho Technologies</h3>
+            <p class="company-role">UI/UX Designer</p>
+          </div>
+          <span class="company-tag">Client · FNB Connect</span>
+        </div>
+        <div class="project-card wide">
+          <div class="wide-main">
+            <div class="project-num">Primary Project</div>
+            <h3 class="project-title">SP Modernization</h3>
+            <p class="project-desc">Improving and modernising existing prepaid service experiences within the FNB Connect digital application, with a focus on the Buy Airtime and Prepaid History modules.</p>
+            <dl class="card-meta">
+              <div><dt>Role</dt><dd>UI/UX Designer</dd></div>
+              <div><dt>Client</dt><dd>FNB Connect</dd></div>
+              <div><dt>Tools</dt><dd>Figma</dd></div>
+            </dl>
+            <div class="project-tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">UX Design</span>
+              <span class="tag">User Flows</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">Design Systems</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="showCase('spmod')">View Case Study</button>
+            </div>
+          </div>
+          <div class="aside-box">
+            <div class="aside-label">Two Modules</div>
+            <div class="aside-item">
+              <span class="aside-num">01</span>
+              <div><h4>Buy Airtime</h4><p>Airtime purchase journey for yourself or someone else, from network selection to confirmation.</p></div>
+            </div>
+            <div class="aside-item">
+              <span class="aside-num">02</span>
+              <div><h4>Prepaid History</h4><p>Transaction history with clearer information hierarchy and Successful, Pending and Failed states.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="company">
+        <div class="company-head">
+          <div class="company-mark">L</div>
+          <div>
+            <h3 class="company-name">Lexci Innovations</h3>
+            <p class="company-role">UI/UX Design Intern</p>
+          </div>
+          <span class="company-tag">Product · InMind</span>
+        </div>
+        <div class="project-card wide">
+          <div class="wide-main">
+            <div class="project-num">Case Study</div>
+            <h3 class="project-title">InMind</h3>
+            <p class="project-desc">A student development platform bridging the gap between academics and real-life skills, designed with a mature, behaviour-first experience for students aged 13–16.</p>
+            <dl class="card-meta">
+              <div><dt>Role</dt><dd>UI/UX Design Intern</dd></div>
+              <div><dt>Audience</dt><dd>Schools, parents &amp; students</dd></div>
+              <div><dt>Tools</dt><dd>Figma</dd></div>
+            </dl>
+            <div class="project-tags">
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Interaction Design</span>
+              <span class="tag">Visual Design</span>
+              <span class="tag">User Research</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="showCase('inmind')">View Case Study</button>
+            </div>
+          </div>
+          <div class="aside-box">
+            <div class="aside-label">Design Direction</div>
+            <div class="aside-item">
+              <span class="aside-num">01</span>
+              <div><h4>Behaviour-first</h4><p>Questionnaire-style interactions reimagined as engaging, behaviour-driven experiences.</p></div>
+            </div>
+            <div class="aside-item">
+              <span class="aside-num">02</span>
+              <div><h4>Age-appropriate</h4><p>A more mature design language for teenagers, with calmer transitions and simpler interactions.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured">
+    <div class="container">
+      <div class="section-label">Featured Work</div>
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <h3 class="project-title">Mystic India Guide</h3>
+          <p class="project-desc">A travel discovery platform designed to help users explore authentic and lesser-known destinations in India through a clear and structured experience.</p>
+          <div class="project-tags">
+            <span class="tag">UX Design</span>
+            <span class="tag">Travel</span>
+            <span class="tag">Research</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary" onclick="showCase('mystic')">View Case Study</button>
+            <a href="https://www.figma.com/proto/tiBN0nUDctiGX6mCywZtiI/Mystic-India-Guide" target="_blank" rel="noopener" class="btn btn-outline">View Prototype ↗</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <h3 class="project-title">Antra</h3>
+          <p class="project-desc">A spiritual and self-reflection app designed to help users connect inward through simple, guided, and mindful interactions.</p>
+          <div class="project-tags">
+            <span class="tag">UX Design</span>
+            <span class="tag">Wellness</span>
+            <span class="tag">Prototyping</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary" onclick="showCase('antra')">View Case Study</button>
+            <a href="https://www.figma.com/proto/XdF4YHk5FjXzFTw0LE0nxP/Antra-Figma" target="_blank" rel="noopener" class="btn btn-outline">View Prototype ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Designed with intention.</p>
+    <p>© 2026</p>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════ PROJECTS PAGE ════════════════════════════════ -->
+<div class="page" id="projects">
+  <div class="container">
+    <div style="padding: 80px 0 60px;">
+      <div class="section-label">All Work</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="group-label">Professional Experience</div>
+
+      <div class="company">
+        <div class="company-head">
+          <div class="company-mark">V</div>
+          <div>
+            <h3 class="company-name">Vibho Technologies</h3>
+            <p class="company-role">UI/UX Designer</p>
+          </div>
+          <span class="company-tag">Client · FNB Connect</span>
+        </div>
+        <div class="project-card wide">
+          <div class="wide-main">
+            <div class="project-num">Primary Project</div>
+            <h3 class="project-title">SP Modernization</h3>
+            <p class="project-desc">Improving and modernising existing prepaid service experiences within the FNB Connect digital application, with a focus on the Buy Airtime and Prepaid History modules.</p>
+            <dl class="card-meta">
+              <div><dt>Role</dt><dd>UI/UX Designer</dd></div>
+              <div><dt>Client</dt><dd>FNB Connect</dd></div>
+              <div><dt>Tools</dt><dd>Figma</dd></div>
+            </dl>
+            <div class="project-tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">UX Design</span>
+              <span class="tag">User Flows</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">Design Systems</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="showCase('spmod')">View Case Study</button>
+            </div>
+          </div>
+          <div class="aside-box">
+            <div class="aside-label">Two Modules</div>
+            <div class="aside-item">
+              <span class="aside-num">01</span>
+              <div><h4>Buy Airtime</h4><p>Airtime purchase journey for yourself or someone else, from network selection to confirmation.</p></div>
+            </div>
+            <div class="aside-item">
+              <span class="aside-num">02</span>
+              <div><h4>Prepaid History</h4><p>Transaction history with clearer information hierarchy and Successful, Pending and Failed states.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="company">
+        <div class="company-head">
+          <div class="company-mark">L</div>
+          <div>
+            <h3 class="company-name">Lexci Innovations</h3>
+            <p class="company-role">UI/UX Design Intern</p>
+          </div>
+          <span class="company-tag">Product · InMind</span>
+        </div>
+        <div class="project-card wide">
+          <div class="wide-main">
+            <div class="project-num">Case Study</div>
+            <h3 class="project-title">InMind</h3>
+            <p class="project-desc">A student development platform bridging the gap between academics and real-life skills, designed with a mature, behaviour-first experience for students aged 13–16.</p>
+            <dl class="card-meta">
+              <div><dt>Role</dt><dd>UI/UX Design Intern</dd></div>
+              <div><dt>Audience</dt><dd>Schools, parents &amp; students</dd></div>
+              <div><dt>Tools</dt><dd>Figma</dd></div>
+            </dl>
+            <div class="project-tags">
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Interaction Design</span>
+              <span class="tag">Visual Design</span>
+              <span class="tag">User Research</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary" onclick="showCase('inmind')">View Case Study</button>
+            </div>
+          </div>
+          <div class="aside-box">
+            <div class="aside-label">Design Direction</div>
+            <div class="aside-item">
+              <span class="aside-num">01</span>
+              <div><h4>Behaviour-first</h4><p>Questionnaire-style interactions reimagined as engaging, behaviour-driven experiences.</p></div>
+            </div>
+            <div class="aside-item">
+              <span class="aside-num">02</span>
+              <div><h4>Age-appropriate</h4><p>A more mature design language for teenagers, with calmer transitions and simpler interactions.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-label" style="margin-top:72px;">Personal Projects</div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <h3 class="project-title">Mystic India Guide</h3>
+          <p class="project-desc">A travel discovery platform designed to help users explore authentic and lesser-known destinations in India through a clear and structured experience.</p>
+          <div class="project-tags">
+            <span class="tag">UX Design</span><span class="tag">Travel</span><span class="tag">Research</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary" onclick="showCase('mystic')">View Case Study</button>
+            <a href="https://www.figma.com/proto/tiBN0nUDctiGX6mCywZtiI/Mystic-India-Guide" target="_blank" rel="noopener" class="btn btn-outline">View Prototype ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <h3 class="project-title">Antra</h3>
+          <p class="project-desc">A spiritual and self-reflection app designed to help users connect inward through simple, guided, and mindful interactions.</p>
+          <div class="project-tags">
+            <span class="tag">UX Design</span><span class="tag">Wellness</span><span class="tag">Prototyping</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary" onclick="showCase('antra')">View Case Study</button>
+            <a href="https://www.figma.com/proto/XdF4YHk5FjXzFTw0LE0nxP/Antra-Figma" target="_blank" rel="noopener" class="btn btn-outline">View Prototype ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+<!-- ════════════════════════════════ CASE STUDY — MYSTIC ════════════════════════════════ -->
+<div class="page" id="case-mystic">
+  <div class="container">
+    <div class="case-study">
+      <button class="back-btn" onclick="showPage('projects')">← Back to Projects</button>
+
+      <div class="case-hero-label">Case Study — 01</div>
+      <h1 class="case-hero-title">Mystic India Guide</h1>
+      <p class="case-overview">A travel discovery platform designed to help users explore authentic and lesser-known destinations in India through a clear and structured experience.</p>
+
+      <div class="case-section">
+        <div class="case-section-label">Starting Point</div>
+        <h3>The Idea</h3>
+        <p>The idea started from noticing how difficult it is to find authentic travel experiences, as most platforms focus only on popular tourist destinations.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Problem</div>
+        <h3>Problem Statement</h3>
+        <p>Users struggle to discover meaningful travel experiences because information is scattered, overwhelming, and focused on mainstream locations.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Approach</div>
+        <h3>Problem Solving</h3>
+        <p>I focused on simplifying the discovery process by organizing information into clear categories — nature, culture, heritage, and local experiences.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">User Flow</div>
+        <h3>Journey</h3>
+        <div class="case-flow">
+          <span class="flow-step">Explore</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Select Category</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Browse Regions</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">View Places</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Choose Destination</span>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Implementation</div>
+        <h3>Design</h3>
+        <p>A structured interface with clear navigation, category-based exploration, and detailed destination pages that guide users step by step.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Design Decisions</div>
+        <h3>Key Choices</h3>
+        <ul class="decisions-list">
+          <li>Visual-first homepage for exploration</li>
+          <li>Category-based navigation instead of search-first</li>
+          <li>Step-by-step flow: Category → State → Place</li>
+          <li>Card-based layout for quick scanning</li>
+          <li>Key information shown upfront (ratings, best season)</li>
+          <li>Strong visual hierarchy in detail pages</li>
+          <li>Guided decision-making sections</li>
+          <li>"Help Me Choose" feature for indecisive users</li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Outcome</div>
+        <h3>Results</h3>
+        <div class="case-result">
+          <p>The design improves clarity and reduces information overload, making it easier for users to explore and choose destinations with confidence.</p>
+        </div>
+      </div>
+
+      <div class="proto-link-wrap">
+        <div class="case-section-label" style="margin-bottom:12px;">Prototype Screens</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;margin-bottom:20px;letter-spacing:-0.01em;">A walkthrough of the design</h3>
+        <div class="screens-grid">
+          <div class="screen-frame">
+            <img src="assets/images/mystic-01-homepage.webp" alt="Mystic India Guide — Hero" class="screen-img" />
+            <div class="screen-caption">Homepage — Discover The Soul Of India</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-02-category-selection.webp" alt="Mystic India Guide — Choose Journey" class="screen-img" />
+            <div class="screen-caption">Category Selection — Choose Your Journey</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-03-state-browse.webp" alt="Mystic India Guide — Nature across India" class="screen-img" />
+            <div class="screen-caption">State Browse — Nature Across India</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-04-state-detail.webp" alt="Mystic India Guide — Himachal Pradesh" class="screen-img" />
+            <div class="screen-caption">State Detail — Himachal Pradesh</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-05-place-cards.webp" alt="Mystic India Guide — Recommended Places" class="screen-img" />
+            <div class="screen-caption">Place Cards — Ratings & Best Season</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-06-help-me-choose.webp" alt="Mystic India Guide — Help Me Choose" class="screen-img" />
+            <div class="screen-caption">Help Me Choose — Guided Decision Making</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-07-place-detail.webp" alt="Mystic India Guide — Chandratal Lake" class="screen-img" />
+            <div class="screen-caption">Place Detail — Chandratal Lake</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-08-real-experience.webp" alt="Mystic India Guide — Real Experience" class="screen-img" />
+            <div class="screen-caption">Real Experience — 360° View Section</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-09-why-visit.webp" alt="Mystic India Guide — Why Visit" class="screen-img" />
+            <div class="screen-caption">Why Visit — Location & Map Preview</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-10-featured-experiences.webp" alt="Mystic India Guide — Featured Experiences" class="screen-img" />
+            <div class="screen-caption">Featured Experiences — Curated Journeys</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/mystic-11-stories.webp" alt="Mystic India Guide — Stories" class="screen-img" />
+            <div class="screen-caption">Stories — Every Journey Tells a Story</div>
+          </div>
+        </div>
+        <div style="margin-top:40px;">
+          <a href="https://www.figma.com/proto/tiBN0nUDctiGX6mCywZtiI/Mystic-India-Guide" target="_blank" rel="noopener" class="btn btn-primary">View Full Prototype ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+<!-- ════════════════════════════════ CASE STUDY — ANTRA ════════════════════════════════ -->
+<div class="page" id="case-antra">
+  <div class="container">
+    <div class="case-study">
+      <button class="back-btn" onclick="showPage('projects')">← Back to Projects</button>
+
+      <div class="case-hero-label">Case Study — 02</div>
+      <h1 class="case-hero-title">Antra</h1>
+      <p class="case-overview">A spiritual and self-reflection app designed to help users connect inward through simple, guided, and mindful interactions.</p>
+
+      <div class="case-section">
+        <div class="case-section-label">Starting Point</div>
+        <h3>The Idea</h3>
+        <p>Many users feel overwhelmed but lack simple tools for daily reflection and inner connection.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Problem</div>
+        <h3>Problem Statement</h3>
+        <p>Spiritual apps are often too complex or overwhelming for beginners, creating barriers rather than pathways to mindfulness.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Approach</div>
+        <h3>Problem Solving</h3>
+        <p>I focused on simplicity by creating a calm interface with guided interactions and minimal cognitive load — making reflection feel approachable, not intimidating.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">User Flow</div>
+        <h3>Journey</h3>
+        <div class="case-flow">
+          <span class="flow-step">Sign Up</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Select Interests</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Dashboard</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Reflection</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Content</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Discussion</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Seek</span>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Implementation</div>
+        <h3>Design</h3>
+        <p>A minimal structure with clear sections for reflection, content, discussions, and search — all within a calm, visually quiet environment.</p>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Design Decisions</div>
+        <h3>Key Choices</h3>
+        <ul class="decisions-list">
+          <li>Minimal and calm UI to reduce mental load</li>
+          <li>Guided onboarding through interest selection</li>
+          <li>Reflection-first homepage</li>
+          <li>Structured content instead of overwhelming feeds</li>
+          <li>Search by feeling, topic, or problem</li>
+          <li>Dedicated discussion space for community</li>
+          <li>Simple bottom navigation</li>
+          <li>Balance between reflection and content</li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Outcome</div>
+        <h3>Results</h3>
+        <div class="case-result">
+          <p>The app creates a simple and approachable experience that encourages consistent engagement, making daily reflection feel natural and sustainable.</p>
+        </div>
+      </div>
+
+      <div class="proto-link-wrap">
+        <div class="case-section-label" style="margin-bottom:12px;">Prototype Screens</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;margin-bottom:20px;letter-spacing:-0.01em;">A walkthrough of the design</h3>
+        <div class="screens-grid">
+          <div class="screen-frame">
+            <img src="assets/images/antra-01-sign-in.webp" alt="Antra — Sign In" class="screen-img" />
+            <div class="screen-caption">Sign In — Your Inner Space</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-02-sign-up.webp" alt="Antra — Sign Up" class="screen-img" />
+            <div class="screen-caption">Sign Up — Welcome To Antra</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-03-onboarding.webp" alt="Antra — Onboarding Manifesto" class="screen-img" />
+            <div class="screen-caption">Onboarding — Only Awareness</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-04-interest-selection.webp" alt="Antra — Interest Selection" class="screen-img" />
+            <div class="screen-caption">Interest Selection — What Calls To You?</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-05-interest-selection.webp" alt="Antra — More Interests" class="screen-img" />
+            <div class="screen-caption">Interest Selection — General Spiritual</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-06-posts.webp" alt="Antra — Posts" class="screen-img" />
+            <div class="screen-caption">Posts — Community Content Feed</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-07-dhara.webp" alt="Antra — Dhara Discussions" class="screen-img" />
+            <div class="screen-caption">Dhara — Deep Discussions</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-08-seek.webp" alt="Antra — Seek" class="screen-img" />
+            <div class="screen-caption">Seek — Search By Feeling, Topic or Problem</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-09-profile.webp" alt="Antra — Profile" class="screen-img" />
+            <div class="screen-caption">Profile — Seeker Posts & Dhara Activity</div>
+          </div>
+          <div class="screen-frame">
+            <img src="assets/images/antra-10-settings.webp" alt="Antra — Settings" class="screen-img" />
+            <div class="screen-caption">Settings — Privacy & Preferences</div>
+          </div>
+        </div>
+        <div style="margin-top:40px;">
+          <a href="https://www.figma.com/proto/XdF4YHk5FjXzFTw0LE0nxP/Antra-Figma" target="_blank" rel="noopener" class="btn btn-primary">View Full Prototype ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+
+<!-- ════════════════════════════════ CASE STUDY — SP MODERNIZATION ════════════════════════════════ -->
+<div class="page" id="case-spmod">
+  <div class="container">
+    <div class="case-study">
+      <button class="back-btn" onclick="showPage('projects')">← Back to Projects</button>
+
+      <div class="case-hero-label">Case Study — Vibho Technologies</div>
+      <h1 class="case-hero-title">SP Modernization</h1>
+      <p class="case-overview">SP Modernization focuses on improving and modernising existing prepaid service experiences within the FNB Connect digital application. I worked primarily on two modules: Buy Airtime and Prepaid History.</p>
+
+      <dl class="case-meta">
+        <div><dt>Company</dt><dd>Vibho Technologies</dd></div>
+        <div><dt>Role</dt><dd>UI/UX Designer</dd></div>
+        <div><dt>Client</dt><dd>FNB Connect</dd></div>
+        <div><dt>Modules</dt><dd>Buy Airtime, Prepaid History</dd></div>
+      </dl>
+
+      <div class="case-section">
+        <div class="case-section-label">Module 01</div>
+        <div class="module-card">
+          <h4>Buy Airtime</h4>
+          <p>I designed and improved the Buy Airtime user journey.</p>
+
+          <div class="sub-label">Journey touchpoints</div>
+          <ol class="stage-list">
+            <li>Network selection</li>
+            <li>Beneficiary selection</li>
+            <li>Account &amp; payment</li>
+            <li>Purchase details</li>
+            <li>Transaction review</li>
+            <li>Confirmation</li>
+          </ol>
+
+          <div class="sub-label">My contributions</div>
+          <ul class="decisions-list">
+            <li>Designed the airtime purchasing journey</li>
+            <li>Created user flows for buying airtime for yourself or someone else</li>
+            <li>Designed network selection and beneficiary selection experiences</li>
+            <li>Worked on account selection and payment-related screens</li>
+            <li>Designed purchase details, transaction review, and confirmation screens</li>
+            <li>Created interactive prototypes in Figma</li>
+            <li>Incorporated stakeholder feedback and refined screens based on UX requirements</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Module 02</div>
+        <div class="module-card">
+          <h4>Prepaid History</h4>
+          <p>I redesigned the Prepaid History experience.</p>
+
+          <div class="sub-label">Transaction states designed</div>
+          <div class="status-row">
+            <span class="status-pill status-success">Successful</span>
+            <span class="status-pill status-pending">Pending</span>
+            <span class="status-pill status-failed">Failed</span>
+          </div>
+
+          <div class="sub-label">My contributions</div>
+          <ul class="decisions-list">
+            <li>Designed prepaid transaction history screens</li>
+            <li>Improved transaction visibility and information hierarchy</li>
+            <li>Designed status indicators for Successful, Pending, and Failed transactions</li>
+            <li>Followed existing FNB design components, symbols, and UX guidelines</li>
+            <li>Created consistent and intuitive user interfaces</li>
+            <li>Developed interactive prototypes and refined designs based on feedback</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Skills &amp; Tools</div>
+        <div class="skill-pills" style="margin-top:12px;">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">UI Design</span>
+          <span class="skill-pill">UX Design</span>
+          <span class="skill-pill">User Flows</span>
+          <span class="skill-pill">Wireframing</span>
+          <span class="skill-pill">Interactive Prototyping</span>
+          <span class="skill-pill">Design Systems</span>
+          <span class="skill-pill">Stakeholder Collaboration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+<!-- ════════════════════════════════ CASE STUDY — INMIND ════════════════════════════════ -->
+<div class="page" id="case-inmind">
+  <div class="container">
+    <div class="case-study">
+      <button class="back-btn" onclick="showPage('projects')">← Back to Projects</button>
+
+      <div class="case-hero-label">Case Study — Lexci Innovations</div>
+      <h1 class="case-hero-title">InMind</h1>
+      <p class="case-subtitle">Student Development Platform</p>
+      <p class="case-overview">InMind is a student development platform designed to bridge the gap between academics and real-life skills, helping students develop essential life skills as they transition towards adulthood.</p>
+
+      <dl class="case-meta">
+        <div><dt>Company</dt><dd>Lexci Innovations</dd></div>
+        <div><dt>Role</dt><dd>UI/UX Design Intern</dd></div>
+        <div><dt>Product</dt><dd>InMind – Student Development Platform</dd></div>
+        <div><dt>Design focus</dt><dd>Students aged 13–16</dd></div>
+      </dl>
+
+      <div class="case-section">
+        <div class="case-section-label">Audience</div>
+        <h3>Who it's for</h3>
+        <div class="mini-grid">
+          <div class="mini-card"><h4>Schools</h4><p>Primary audience</p></div>
+          <div class="mini-card"><h4>Parents</h4><p>Primary audience</p></div>
+          <div class="mini-card primary"><h4>Students</h4><p>Primary audience, with a design focus on ages 13–16</p></div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Platform Focus</div>
+        <h3>What it develops</h3>
+        <div class="skill-pills" style="margin-top:16px;">
+          <span class="skill-pill">Self-awareness</span>
+          <span class="skill-pill">Emotional intelligence &amp; regulation</span>
+          <span class="skill-pill">Decision-making</span>
+          <span class="skill-pill">Social intelligence</span>
+          <span class="skill-pill">Confidence</span>
+          <span class="skill-pill">Digital discipline</span>
+          <span class="skill-pill">Career readiness</span>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">My Contributions</div>
+        <h3>UI/UX design of the student application</h3>
+        <ul class="decisions-list">
+          <li>Designed student-focused application interfaces</li>
+          <li>Redesigned questionnaire-style interactions into more engaging, behaviour-first experiences</li>
+          <li>Worked on conversational interface content and student interaction flows</li>
+          <li>Explored situational and cinematic visual backgrounds for more immersive experiences</li>
+          <li>Improved visual hierarchy, whitespace, and floating card layouts</li>
+          <li>Created a more mature, age-appropriate design language for teenage students</li>
+          <li>Worked on calmer transitions and simplified interactions</li>
+          <li>Explored dark-themed interfaces for non-academic experiences</li>
+          <li>Incorporated stakeholder feedback to improve the overall user experience</li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Design Approach</div>
+        <h3>Moving beyond childish educational apps</h3>
+        <p>The objective was to move away from conventional, childish educational application designs and create a more mature, engaging, and behaviour-focused experience for teenagers.</p>
+        <div class="dark-panel">
+          <div class="case-section-label">The Shift</div>
+          <div class="shift-grid">
+            <div class="shift-col from">
+              <h5>From</h5>
+              <ul>
+                <li>Conventional, childish educational app design</li>
+                <li>Questionnaire-style interactions</li>
+              </ul>
+            </div>
+            <div class="shift-arrow">→</div>
+            <div class="shift-col to">
+              <h5>To</h5>
+              <ul>
+                <li>Mature, age-appropriate design language</li>
+                <li>Engaging, behaviour-first experiences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Design Direction</div>
+        <h3>Principles</h3>
+        <ul class="decisions-list">
+          <li>Minimal and modern interfaces</li>
+          <li>Behaviour-driven interactions</li>
+          <li>Conversational language</li>
+          <li>Age-appropriate visual design</li>
+          <li>Simple and intuitive navigation</li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-label">Skills &amp; Tools</div>
+        <div class="skill-pills" style="margin-top:12px;">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">UI/UX Design</span>
+          <span class="skill-pill">User Research</span>
+          <span class="skill-pill">User Flows</span>
+          <span class="skill-pill">Wireframing</span>
+          <span class="skill-pill">Prototyping</span>
+          <span class="skill-pill">Interaction Design</span>
+          <span class="skill-pill">Visual Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+<!-- ════════════════════════════════ ABOUT PAGE ════════════════════════════════ -->
+<div class="page" id="about">
+  <div class="container">
+    <div class="about-page">
+      <div class="about-intro">
+        <div class="section-label">About</div>
+        <h2 class="section-title" style="margin-bottom: 0;">I design with<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--accent);">purpose</em></h2>
+        <p>I'm a UX Designer passionate about creating clear, meaningful, and human-centred digital experiences. My work sits at the intersection of research, structure, and visual clarity — always focused on the person on the other side of the screen.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-label">What I Do</div>
+          <h3>Skills</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">User Experience</span>
+            <span class="skill-pill">User Interface</span>
+            <span class="skill-pill">Wireframing</span>
+            <span class="skill-pill">Prototyping</span>
+            <span class="skill-pill">User Flows</span>
+            <span class="skill-pill">Interactive Interface</span>
+            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill">Analytical Thinking</span>
+            <span class="skill-pill">Creativity</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">HTML (Basics)</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-label">How I Work</div>
+          <h3>Tools</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Framer</span>
+            <span class="skill-pill">Canva</span>
+            <span class="skill-pill">Notion</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">Cursor</span>
+            <span class="skill-pill">Claude</span>
+            <span class="skill-pill">Gen AI Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+<!-- ════════════════════════════════ CONTACT PAGE ════════════════════════════════ -->
+<div class="page" id="contact">
+  <div class="container">
+    <div class="contact-page">
+      <div class="section-label">Contact</div>
+      <h2 class="contact-title">Let's work<br>together</h2>
+      <p class="contact-sub">Have a project in mind or just want to connect? My inbox is always open.</p>
+      <a class="contact-email" href="mailto:shreeyagalgali2@gmail.com">shreeyagalgali2@gmail.com</a>
+    </div>
+  </div>
+  <footer><p>Designed with intention.</p><p>© 2026</p></footer>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
